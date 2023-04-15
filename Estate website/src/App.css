@@ -1,0 +1,14 @@
+.app{
+    position: relative;
+}
+.circle{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: #b3b3b378;
+    position: absolute;
+    filter: blur(100px);
+    left: 10px;
+    top: 10px;
+    z-index: 30;
+}

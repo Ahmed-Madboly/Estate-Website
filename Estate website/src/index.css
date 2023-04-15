@@ -1,0 +1,52 @@
+:root {
+  --black:#000;
+  --light:#fff;
+  --sky-gradient:linear-gradient(90deg,#0079b0, #017494);
+  --page-width:78%;
+  --primary-color:#00235B;
+  --orange-color:#fda625;
+  --gray-color:#000000a5;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+}
+*{
+  box-sizing: border-box;
+}
+a {
+  font-weight: 500;
+  color: transparent;
+  text-decoration: inherit;
+}
+
+
+body {
+  margin: 0;
+  padding:0;
+
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+button{
+  border: none;
+  padding: 7px 18px;
+  font-size: 1.2em;
+  border-radius: 5px;
+  transition: 0.1s ease-in-out;
+
+}
+button:hover{
+  transform: scale(1.02,1.05);
+  cursor: pointer;
+}
+
+

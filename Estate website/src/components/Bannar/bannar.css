@@ -1,0 +1,68 @@
+.bannar{
+    display:flex;
+    justify-content: center;
+    margin: 50px 0;
+}
+.bannar .container{
+    width: var(--page-width);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background:linear-gradient(180deg,#2c098ee5,#06247bf0);
+    padding:40px;
+    color: #fff;
+    border-radius: 9px;
+    border: 7px solid #06247bf0;
+}
+.bannar .title{
+    color: #ffffffe2;
+    letter-spacing: 2px;
+    margin: 10px;
+    font-size: 29px;
+}
+.bannar .desc{
+    text-align: center;
+    padding: 0 10%;
+    line-height: 1.8em;
+    color: #ffffffc7;
+    font-size: 18px;
+    margin:10px 0 40px;
+}
+.bannar .b-button{
+    background-color: #3f51b5;
+    color: rgba(255, 255, 255, 0.9);
+    width: 280px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 19px;
+    border:2px solid #ffffff82;
+}
+@media (max-width:760px) {
+    .bannar .title{
+        font-size: 24px;
+        margin: 10px 0;
+    }
+    .bannar .desc {
+        padding: 0px;
+        font-size: 14px;
+        text-align: left;
+        margin: 10px 0 17px;
+    }
+}
+@media (max-width:400px) {
+    .bannar .container {
+        padding: 15px;
+    }
+    .bannar .title {
+        font-size: 20px;
+    }
+    .bannar .desc {
+        margin: 10px 0 17px;
+    }
+    .bannar a {
+        width:100%;
+    }
+    .bannar .b-button {
+        width:100%;
+    }
+}

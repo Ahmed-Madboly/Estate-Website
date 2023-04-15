@@ -1,0 +1,79 @@
+.navbar{
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    background-color: var(--black);
+    height: 80px;
+    overflow: hidden;
+    z-index: 29;
+}
+.navbar .container{
+    width: var(--page-width);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar .logo{
+    cursor: pointer;
+}
+.navbar .menu{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+.navbar .menu a{
+    color: #ffffffc1;
+    font-size: 1.03em;
+}
+.navbar .n-button{
+    background:var(--sky-gradient);
+    color: #fff;
+}
+.menu-icon{
+    display: none;
+}
+
+@media (max-width:1040px) {
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+        color:#fff;
+        font-size:40px;
+    }
+    .menu-icon svg{
+        fill: #fff;
+    }
+    .navbar .menu{
+        flex-direction: column;
+        position: absolute;
+        top: 110px;
+        right: 0;
+        background-color: #fff;
+        color: black;
+        padding: 60px;
+        z-index: 30;
+        border-radius: 7px 0 0 7px;
+        transition: 0.3s ease-in-out;
+        z-index: -123;
+        opacity: 0;
+    }
+
+    .navbar .menu.active{
+        opacity: 1;
+        z-index: 3330;
+        top: 70px;
+    }
+    .navbar .menu a{
+        color: black;
+    }
+    
+}
+@media (max-width:300px) {
+    .navbar .logo img{
+        width: 160px;
+    }
+    .menu-icon{
+        font-size: 35px;
+    }
+}
+

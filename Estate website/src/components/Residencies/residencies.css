@@ -1,0 +1,116 @@
+.residencies{
+    display: flex;
+    justify-content:center;
+    margin:10px 0 60px;
+    
+}
+.residencies .container{
+    width: var(--page-width);
+    position: relative;
+    overflow: hidden;
+}
+.residencies .sm-title{
+    color: var(--orange-color);
+    font-size: 1.5em;
+    margin: 0;
+}
+.residencies .lg-title{
+    color: var(--primary-color);
+    font-size: 1.6em;
+    margin: 4px 0 30px;
+    font-weight: 800;
+}
+
+.residencies .card > .image img{
+    width: 100%;
+    border-radius: 10px;
+}
+.residencies .card > .price{
+font-size:19px;
+font-weight: 600;
+color: #00000094;
+cursor: default;
+}
+.residencies .card > .price span{
+    color: var(--orange-color);
+    font-size: 23px;
+}
+.residencies .card > .title{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    color: var(--primary-color);
+    font-size: 17px;
+    margin:5px 0;
+    cursor: default;
+}
+.residencies .card > .desc{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    margin: 5px 0;
+    color: var(--gray-color);
+    cursor: default;
+}
+.swiper{
+    overflow: visible;
+}
+.buttons{
+    position: absolute;
+    right:20px;
+    top: -60px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    
+}
+.buttons button{
+    color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    padding: 0;
+}
+
+.buttons button:last-child{
+    background-color: transparent;
+    border-radius: 4px;
+    -webkit-box-shadow: 0px 0px 26px -12px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 0px 26px -12px rgba(0,0,0,1);
+    box-shadow: 0px 0px 26px -12px rgba(0,0,0,1);
+}
+
+@media (max-width:400px) {
+    .residencies .sm-title{
+        font-size: 1.1em;
+        text-align: center;
+    }
+    .residencies .lg-title{
+        font-size: 1.4em;
+        text-align: center;
+    }
+    .residencies .buttons{
+        position: initial;
+        justify-content: center;
+        padding: 20px 0 10px 0;
+    }
+    .value-sec .desc {
+        font-size: 14px;
+        text-align: center;
+    }
+    .accordion-button {
+        padding: 8px 4px;
+    }
+    .accordion-item .title {
+        font-size: 0.7em;
+    }
+    .accordion-panel {
+        font-size: 0.7em;
+    }
+}
